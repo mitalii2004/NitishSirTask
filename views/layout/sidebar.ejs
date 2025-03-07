@@ -1,0 +1,118 @@
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="logo-container">
+      <img class="img-g" src="/logo123.jpg" alt="Logo" />
+    </div>
+    <a
+      href="/"
+      class="nav-link "
+      data-page="Dashboard"
+      onclick="updateCommonBar('Dashboard')"
+      >Dashboard</a
+    >
+    <a
+    href="/user"
+    class="nav-link <%= title === 'Users' ? 'active' : '' %>"
+    data-page="Users"
+    onclick="updateCommonBar('Users')"
+  >
+    Users</a
+    >
+  
+    <a
+      href="/music"
+      class="nav-link <%= title === 'Musics' ? 'active' : '' %>"
+      data-page="Musics"
+      onclick="updateCommonBar('Musics')"
+      >Music</a
+    >
+    <a
+      href="/challenges"
+      class="nav-link <%= title === 'Challenges' ? 'active' : '' %>"
+      data-page="Challenges"
+      onclick="updateCommonBar('Challenges')"
+      >Challenges</a
+    >
+    <a
+      href="/contactUs"
+      class="nav-link <%= title === 'contactUs' ? 'active' : '' %>"
+      data-page="Contact Us"
+      onclick="updateCommonBar('Contact Us')"
+      >Contact Us</a
+    >
+    <a
+      href="/faq"
+      class="nav-link <%= title === 'FAQ' ? 'active' : '' %>"
+      data-page="FAQ"
+      onclick="updateCommonBar('FAQ')"
+      >FAQ</a
+    >
+    <a
+      href="/banner"
+      class="nav-link <%= title === 'Banners' ? 'active' : '' %>"
+      data-page="Banners"
+      onclick="updateCommonBar('Banners')"
+      >Banners</a
+    >
+    <a
+      href="/termsConditions"
+      class="nav-link <%= title === 'TermsConditions' ? 'active' : '' %>"
+      data-page="Terms & Conditions"
+      onclick="updateCommonBar('Terms & Conditions')"
+      >Terms & Conditions</a
+    >
+    <a
+      href="/privacyPolicy"
+      class="nav-link <%= title === 'PrivacyPolicy' ? 'active' : '' %>"
+      data-page="Privacy Policy"
+      onclick="updateCommonBar('Privacy Policy')"
+      >Privacy Policy</a
+    >
+    <a
+      href="/aboutUs"
+      class="nav-link <%= title === 'AboutUs' ? 'active' : '' %>"
+      data-page="About Us"
+      onclick="updateCommonBar('About Us')"
+      >About Us</a
+    >
+  </div>
+  
+  <!-- Main Content -->
+  
+    <div class="navbar">
+      <div class="navbar-header">
+        <h1>Admin Dashboard</h1>
+        <div class="user-info">
+          <span>Admin</span>
+          <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+      </div>
+      <div id="common-bar" class="common-bar">Dashboard</div>
+  
+  
+      <style>
+        .logout-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #d9534f;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c9302c; 
+    text-decoration: none;
+  }
+  
+  .sidebar .logout-btn {
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+  }
+  
+      </style>
