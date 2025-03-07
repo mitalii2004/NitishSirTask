@@ -19,7 +19,10 @@ module.exports = (Sequelize, sequelize, DataTypes) => {
                 allowNull: true,
                 defaultValue: null,
             },
-
+            role: {
+                type: DataTypes.INTEGER,
+                defaultValue: 1 // 1 for user and 0 for admin
+            },
         },
         {
             tableName: "users",
